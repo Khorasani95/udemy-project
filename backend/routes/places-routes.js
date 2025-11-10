@@ -19,7 +19,8 @@ router.post(
     ],
     placesControllers.createPlace);
 
-router.patch('/:pid',
+router.patch(
+    '/:pid',
     [
         check('title')
             .not()
